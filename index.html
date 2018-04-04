@@ -1,25 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-   header {
-     padding: 20px 0px 0px 0px;
-    text-align: center;
-   }
-   a {
-     color: black;
-   }
-   ul {
-     background-color: rgba(0,0,255,0.5);
-     padding: 10px;
-
-   }
-   li{
-    display: inline;
-    padding: 20px;
-   }
-  </style>
-
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script src="dynamic.js"></script>
 </head>
 
 <body>
@@ -27,11 +12,68 @@
     <h1> SaintShare </h1>
     <h3> Based in the coastal town of St. Andrews</h3>
     <ul>
-      <li><a href="#">About SaintShare</a></li>
+      <li><a href="#">Available dates</a></li>
       <li><a href="#">FAQ</a></li>
       <li><a href="#">Login</a></li>
     </ul>
   </header>
-hello
-</body>
+
+  <div class = "explanation"> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </div>
+<p>From:
+<div class="dropdown">
+  <button class="dropbtn">Choose a departure location</button>
+    <div class="dropdown-content">
+      <a>St. Andrews</a>
+      <a>Edinburgh City</a>
+      <a>Edinburgh Airport</a>
+      <a>Glasgow City</a>
+      <a>Glasgow Airport</a>
+    </div>
+  </div>
+</p>
+
+<p>To:
+<div class="dropdown">
+  <button class="dropbtn">Choose a destination</button>
+  <div class="dropdown-content">
+    <a>St. Andrews</a>
+    <a>Edinburgh City</a>
+    <a>Edinburgh Airport</a>
+    <a>Glasgow City</a>
+    <a>Glasgow Airport</a>
+  </div>
+</div>
+</p>
+
+<div id="datepicker">Choose a date</div>
+<br/>
+<input id="time" placeholder="Insert departure time"><br>
+
+<input type="checkbox">I am looking for a ride<br>
+<input type="checkbox">I am offering a lift<br>
+
+<p>How many seats can you offer?
+  <input id="seatsAvailable" placeholder="Amount of seats available"><br>
+  Are you willing to pick people up?
+  <div class="dropdown">
+    <button class="dropbtn">Yes/No</button>
+    <div class="dropdown-content">
+      <a>Yes</a>
+      <a>No</a>
+    </div>
+  </div>
+</p>
+
+<p>Name:<input class="contactDetails"><br>
+  Email:<input class="contactDetails"><br>
+  Phone number: <input class="contactDetails"><br>
+  Street: <input class="contactDetails"><br>
+  Postcode: <input class="contactDetails"><br>
+  Town: <input class="contactDetails"><br>
+</p>
+
+<input type="checkbox">Keep me updated via e-mail<br>
+
+<button class="submit">Submit</button>
+
 </html>
