@@ -1,0 +1,33 @@
+.ui-datepicker {
+  width: 216px;
+  height: auto;
+  margin: 5px auto 0;
+  font: 9pt Arial;
+  background-color: grey;
+}
+
+.ui-datepicker a {
+  text-decoration: none;
+}
+
+.ui-datepicker table {
+  width: 100%;
+}
+
+.ui-datepicker-title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px; 
+}
+
+.ui-datepicker-prev {
+  text-align: center;
+  cursor: pointer;
+  float: left;
+}
+
+.ui-datepicker-next {
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
