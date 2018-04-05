@@ -14,14 +14,49 @@
     <ul>
       <li><a href="AvailableDates.html">Available dates</a></li>
       <li><a href="FAQ.html">FAQ</a></li>
-      <li><a href="#">Login</a></li>
+      <li><a href="#" class="login-button">Login</a></li>
     </ul>
+
+    <form action="action_page.php">
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+    </form>
+
   </header>
 
-  <div class = "explanation"> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </div>
-<p>From:
-<div class="dropdown">
-  <button class="dropbtn">Choose a departure location</button>
+  <div class="explanation"><h3> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </h3></div>
+
+<div>
+<form>
+  <p>From:
+  <div class="dropdown">
+    <button class="dropbtn">Choose a departure location</button>
+      <div class="dropdown-content">
+        <a>St. Andrews</a>
+        <a>Edinburgh City</a>
+        <a>Edinburgh Airport</a>
+        <a>Glasgow City</a>
+        <a>Glasgow Airport</a>
+      </div>
+    </div>
+  </p>
+
+  <p>To:
+  <div class="dropdown">
+    <button class="dropbtn">Choose a destination</button>
     <div class="dropdown-content">
       <a>St. Andrews</a>
       <a>Edinburgh City</a>
@@ -30,50 +65,39 @@
       <a>Glasgow Airport</a>
     </div>
   </div>
-</p>
+  </p>
 
-<p>To:
-<div class="dropdown">
-  <button class="dropbtn">Choose a destination</button>
-  <div class="dropdown-content">
-    <a>St. Andrews</a>
-    <a>Edinburgh City</a>
-    <a>Edinburgh Airport</a>
-    <a>Glasgow City</a>
-    <a>Glasgow Airport</a>
-  </div>
-</div>
-</p>
+  <div id="datepicker">Choose a date</div>
+  <br/>
+  <input id="time" placeholder="Insert departure time"><br>
 
-<div id="datepicker">Choose a date</div>
-<br/>
-<input id="time" placeholder="Insert departure time"><br>
+  <input type="checkbox">I am looking for a ride<br>
+  <input type="checkbox">I am offering a lift<br>
 
-<input type="checkbox">I am looking for a ride<br>
-<input type="checkbox">I am offering a lift<br>
-
-<p>How many seats can you offer?
-  <input id="seatsAvailable" placeholder="Amount of seats available"><br>
-  Are you willing to pick people up?
-  <div class="dropdown">
-    <button class="dropbtn">Yes/No</button>
-    <div class="dropdown-content">
-      <a>Yes</a>
-      <a>No</a>
+  <p>How many seats can you offer?
+    <input id="seatsAvailable" placeholder="Amount of seats available"><br>
+    Are you willing to pick people up?
+    <div class="dropdown">
+      <button class="dropbtn">Yes/No</button>
+      <div class="dropdown-content">
+        <a>Yes</a>
+        <a>No</a>
+      </div>
     </div>
-  </div>
-</p>
+  </p>
 
-<p>Name:<input class="contactDetails"><br>
-  Email:<input class="contactDetails"><br>
-  Phone number: <input class="contactDetails"><br>
-  Street: <input class="contactDetails"><br>
-  Postcode: <input class="contactDetails"><br>
-  Town: <input class="contactDetails"><br>
-</p>
+  <p>Name:<input class="contactDetails"><br>
+    Email:<input class="contactDetails"><br>
+    Phone number: <input class="contactDetails"><br>
+    Street: <input class="contactDetails"><br>
+    Postcode: <input class="contactDetails"><br>
+    Town: <input class="contactDetails"><br>
+  </p>
 
-<input type="checkbox">Keep me updated via e-mail<br>
+  <input type="checkbox">Keep me updated via e-mail<br>
 
-<button class="submit">Submit</button>
+  <input type="submit" value="Submit">
+</form>
+</div>
 
 </html>
