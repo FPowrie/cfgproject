@@ -42,49 +42,51 @@
 
 <div>
 <form>
-  <p>From:
-  <div class="dropdown">
-    <button class="dropbtn">Choose a departure location</button>
-      <div class="dropdown-content">
-        <a>St. Andrews</a>
-        <a>Edinburgh City</a>
-        <a>Edinburgh Airport</a>
-        <a>Glasgow City</a>
-        <a>Glasgow Airport</a>
-      </div>
-    </div>
+ <p>From:
+  <select name="From">
+        <option value ="stAndrews">St. Andrews</option>
+        <option value ="ediCity">Edinburgh City</option>
+        <option value ="ediAirport">Edinburgh Airport</option>
+        <option value ="glaCity">Glasgow City</option>
+        <option value ="glaAirport">Glasgow Airport</option>
+  </select>
   </p>
 
   <p>To:
-  <div class="dropdown">
-    <button class="dropbtn">Choose a destination</button>
-    <div class="dropdown-content">
-      <a>St. Andrews</a>
-      <a>Edinburgh City</a>
-      <a>Edinburgh Airport</a>
-      <a>Glasgow City</a>
-      <a>Glasgow Airport</a>
-    </div>
-  </div>
+  <select name="To">
+        <option value ="stAndrews">St. Andrews</option>
+        <option value ="ediCity">Edinburgh City</option>
+        <option value ="ediAirport">Edinburgh Airport</option>
+        <option value ="glaCity">Glasgow City</option>
+        <option value ="glaAirport">Glasgow Airport</option>
+  </select>
   </p>
 
-  <p>Date: <input type="text" id="datepicker"></p>
+
+  <div>
+     Date: <input type="text" id="datepicker">
+  </div>
+  
   <br/>
   <input id="time" placeholder="Insert departure time"><br>
 
-  <input type="checkbox">I am looking for a ride<br>
-  <input type="checkbox">I am offering a lift<br>
+  I am looking for a ride: <input type="checkbox"><br>
+  I am offering a lift: <input type="checkbox" id="myCheck" onclick="myFunction()">
 
-  <p>How many seats can you offer?
-    <input id="seatsAvailable" placeholder="Amount of seats available"><br>
-    Are you willing to pick people up?
-    <div class="dropdown">
-      <button class="dropbtn">Yes/No</button>
-      <div class="dropdown-content">
-        <a>Yes</a>
-        <a>No</a>
-      </div>
-    </div>
+  <p id="text" style="display:none">
+  How many seats can you offer?
+    <select name="seatsAvailable">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select><br>
+  Are you willing to pick people up?
+    <select name="pickUp">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
   </p>
 
   <p>Name:<input class="contactDetails"><br>
@@ -94,6 +96,12 @@
     Postcode: <input class="contactDetails"><br>
     Town: <input class="contactDetails"><br>
   </p>
+  
+  <textarea name="message" rows="8" cols="50">
+  Extra information
+  </textarea>
+
+  <br/>
 
   <input type="checkbox">Keep me updated via e-mail<br>
 
