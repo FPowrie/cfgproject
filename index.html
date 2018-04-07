@@ -19,6 +19,12 @@
   </header>
 
   <div class = "explanation"> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </div>
+
+<div class="outerform">
+<form id="form1" onsubmit="myFunction()">
+
+<h3> Travel Details </h3>
+
 <p>From:
 <div class="dropdown">
   <button class="dropbtn">Choose a departure location</button>
@@ -49,31 +55,46 @@
 <br/>
 <input id="time" placeholder="Insert departure time"><br>
 
-<input type="checkbox">I am looking for a ride<br>
-<input type="checkbox">I am offering a lift<br>
 
+<div id="ride">
+  <input type="radio" name="rad" id=needride checked="checked"> I am looking for a ride<br />
+  <input type="radio" name="rad" id="offerride" value= "ride">I am offering a ride<br>
+</div>
+
+
+<div id="liftq"
 <p>How many seats can you offer?
   <input id="seatsAvailable" placeholder="Amount of seats available"><br>
-  Are you willing to pick people up?
-  <div class="dropdown">
-    <button class="dropbtn">Yes/No</button>
-    <div class="dropdown-content">
-      <a>Yes</a>
-      <a>No</a>
-    </div>
-  </div>
+  Are you willing to pick people up from their chosen location?
+  <input type="radio" name="radi">Yes
+  <input type="radio" name="radi">No
+</div>
+
+
 </p>
 
-<p>Name:<input class="contactDetails"><br>
+
+<h3> Contact Details </h3>
+<p>
+  Name:<input class="contactDetails"><br>
   Email:<input class="contactDetails"><br>
-  Phone number: <input class="contactDetails"><br>
+  Phone: <input class="contactDetails"><br>
   Street: <input class="contactDetails"><br>
-  Postcode: <input class="contactDetails"><br>
   Town: <input class="contactDetails"><br>
+  Postcode: <input class="contactDetails"><br>
 </p>
 
-<input type="checkbox">Keep me updated via e-mail<br>
+<input type="checkbox" checked>Keep me updated via e-mail<br>
 
-<button class="submit">Submit</button>
+<input type="button" id="button1" name="Submit" value="Submit">
+
+</form>
+
+<div id="replacement">
+<p>Thank you for submitting your details!
+  <br> We will be in touch via email within the next 48 hours with further details.</p>
+</div>
+</div>
+
 
 </html>
