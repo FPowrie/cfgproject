@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="datepicker.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
   <script src="dynamic.js"></script>
@@ -12,11 +13,11 @@
     <h1> SaintShare </h1>
     <h3> Based in the coastal town of St. Andrews</h3>
     <ul>
-      <li><a href="#">Available dates</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">Login</a></li>
+      <li><a href="AvailableDates.html">Available dates</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="#" class="login-button">Login</a></li>
     </ul>
-  </header>
+
 
   <div class = "explanation"> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </div>
 
@@ -25,36 +26,34 @@
 
 <h3> Travel Details </h3>
 
-<p>From:
-<div class="dropdown">
-  <button class="dropbtn">Choose a departure location</button>
-    <div class="dropdown-content">
-      <a>St. Andrews</a>
-      <a>Edinburgh City</a>
-      <a>Edinburgh Airport</a>
-      <a>Glasgow City</a>
-      <a>Glasgow Airport</a>
-    </div>
+<div>
+<form>
+ <p>From:
+  <select name="From">
+        <option value ="stAndrews">St. Andrews</option>
+        <option value ="ediCity">Edinburgh City</option>
+        <option value ="ediAirport">Edinburgh Airport</option>
+        <option value ="glaCity">Glasgow City</option>
+        <option value ="glaAirport">Glasgow Airport</option>
+  </select>
+  </p>
+
+  <p>To:
+  <select name="To">
+        <option value ="stAndrews">St. Andrews</option>
+        <option value ="ediCity">Edinburgh City</option>
+        <option value ="ediAirport">Edinburgh Airport</option>
+        <option value ="glaCity">Glasgow City</option>
+        <option value ="glaAirport">Glasgow Airport</option>
+  </select>
+  </p>
+
+  <div>
+     Date: <input type="text" id="datepicker">
   </div>
-</p>
-
-<p>To:
-<div class="dropdown">
-  <button class="dropbtn">Choose a destination</button>
-  <div class="dropdown-content">
-    <a>St. Andrews</a>
-    <a>Edinburgh City</a>
-    <a>Edinburgh Airport</a>
-    <a>Glasgow City</a>
-    <a>Glasgow Airport</a>
-  </div>
-</div>
-</p>
-
-<div id="datepicker">Choose a date</div>
-<br/>
-<input id="time" placeholder="Insert departure time"><br>
-
+  
+  <br/>
+  <input id="time" placeholder="Insert departure time"><br>
 
 <div id="ride">
   <input type="radio" name="rad" id=needride checked="checked"> I am looking for a ride<br />
@@ -63,14 +62,19 @@
 
 
 <div id="liftq"
-<p>How many seats can you offer?
-  <input id="seatsAvailable" placeholder="Amount of seats available"><br>
+<p id="text" style="display:none">
+  How many seats can you offer?
+    <select name="seatsAvailable">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select><br>
   Are you willing to pick people up from their chosen location?
   <input type="radio" name="radi">Yes
   <input type="radio" name="radi">No
 </div>
-
-
 </p>
 
 
@@ -83,6 +87,10 @@
   Town: <input class="contactDetails"><br>
   Postcode: <input class="contactDetails"><br>
 </p>
+    
+<textarea name="message" rows="8" cols="50">
+  Extra information
+  </textarea>
 
 <input type="checkbox" checked>Keep me updated via e-mail<br>
 
@@ -95,6 +103,5 @@
   <br> We will be in touch via email within the next 48 hours with further details.</p>
 </div>
 </div>
-
 
 </html>
