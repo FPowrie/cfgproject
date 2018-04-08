@@ -64,3 +64,9 @@ input[type=text], input[type=password] {
 .login {
   display: none;
 }
+
+.outerform {
+  margin: 0 auto;
+  width: 75%;
+  text-align: left;
+}
