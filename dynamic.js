@@ -5,16 +5,22 @@ $(document).ready(function() {
     });
 });
 
-function myFunction() {
-  // Get the checkbox
-  var checkBox = document.getElementById("myCheck");
-  // Get the output text
-  var text = document.getElementById("text");
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $("#replacement").toggle();
+        $("#form1").toggle();
+        $(".explanation").toggle();
+    });
+});
 
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    text.style.display = "block";
-  } else {
-    text.style.display = "none";
-  }
-}
+$(document).ready(function(){
+    $("#offerride").click(function(){
+        $("#liftq").show();
+    });
+});
+
+$(document).ready(function(){
+    $("#needride").click(function(){
+        $("#liftq").hide();
+    });
+});

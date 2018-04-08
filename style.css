@@ -14,8 +14,13 @@ li{
  display: inline;
  padding: 20px;
 }
-
-/* Dropdown Button */
+.outerform {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 1em;
+}
 .dropbtn {
     background-color: #0C39CB;
     color: white;
@@ -121,4 +126,12 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
+}
+
+#replacement {
+  display: none;
+}
+
+#liftq {
+  display: none;
 }

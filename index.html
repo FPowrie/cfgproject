@@ -18,27 +18,13 @@
       <li><a href="#" class="login-button">Login</a></li>
     </ul>
 
-    <form action="action_page.php">
 
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+  <div class = "explanation"> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </div>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+<div class="outerform">
+<form id="form1" onsubmit="myFunction()">
 
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-    </form>
-
-  </header>
-
-  <div class="explanation"><h3> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </h3></div>
+<h3> Travel Details </h3>
 
 <div>
 <form>
@@ -62,7 +48,6 @@
   </select>
   </p>
 
-
   <div>
      Date: <input type="text" id="datepicker">
   </div>
@@ -70,10 +55,14 @@
   <br/>
   <input id="time" placeholder="Insert departure time"><br>
 
-  I am looking for a ride: <input type="checkbox"><br>
-  I am offering a lift: <input type="checkbox" id="myCheck" onclick="myFunction()">
+<div id="ride">
+  <input type="radio" name="rad" id=needride checked="checked"> I am looking for a ride<br />
+  <input type="radio" name="rad" id="offerride" value= "ride">I am offering a ride<br>
+</div>
 
-  <p id="text" style="display:none">
+
+<div id="liftq"
+<p id="text" style="display:none">
   How many seats can you offer?
     <select name="seatsAvailable">
       <option value="1">1</option>
@@ -82,31 +71,37 @@
       <option value="4">4</option>
       <option value="5">5</option>
     </select><br>
-  Are you willing to pick people up?
-    <select name="pickUp">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
-  </p>
+  Are you willing to pick people up from their chosen location?
+  <input type="radio" name="radi">Yes
+  <input type="radio" name="radi">No
+</div>
+</p>
 
-  <p>Name:<input class="contactDetails"><br>
-    Email:<input class="contactDetails"><br>
-    Phone number: <input class="contactDetails"><br>
-    Street: <input class="contactDetails"><br>
-    Postcode: <input class="contactDetails"><br>
-    Town: <input class="contactDetails"><br>
-  </p>
-  
-  <textarea name="message" rows="8" cols="50">
+
+<h3> Contact Details </h3>
+<p>
+  Name:<input class="contactDetails"><br>
+  Email:<input class="contactDetails"><br>
+  Phone: <input class="contactDetails"><br>
+  Street: <input class="contactDetails"><br>
+  Town: <input class="contactDetails"><br>
+  Postcode: <input class="contactDetails"><br>
+</p>
+    
+<textarea name="message" rows="8" cols="50">
   Extra information
   </textarea>
 
-  <br/>
+<input type="checkbox" checked>Keep me updated via e-mail<br>
 
-  <input type="checkbox">Keep me updated via e-mail<br>
+<input type="button" id="button1" name="Submit" value="Submit">
 
-  <input type="submit" value="Submit">
 </form>
+
+<div id="replacement">
+<p>Thank you for submitting your details!
+  <br> We will be in touch via email within the next 48 hours with further details.</p>
+</div>
 </div>
 
 </html>
