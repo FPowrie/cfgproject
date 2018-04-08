@@ -18,26 +18,22 @@
       <li><a href="#" class="login-button">Login</a></li>
     </ul>
     
-    <form action="action_page.php">
-
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+    <section class="container">
+    <div class="login">
+      <h1>Login</h1>
+      <form method="post" action="index.html">
+        <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
+        <p><input type="password" name="password" value="" placeholder="Password"></p>
+        <p class="remember_me">
+          <label>
+            <input type="checkbox" name="remember_me" id="remember_me">
+            Remember me on this computer
+          </label>
+        </p>
+        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      </form>
     </div>
-    </form>
-    
-  </header>
-
+   </header>
 
   <div class = "explanation"> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </div>
 
@@ -122,6 +118,6 @@
 <p>Thank you for submitting your details!
   <br> We will be in touch via email within the next 48 hours with further details.</p>
 </div>
-</div>
 
+</body>
 </html>
