@@ -20,6 +20,11 @@ li{
     padding: 20px;
     border: 1px solid;
     border-radius: 1em;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    font-family: verdana;
+    font-size: 15px;
 }
 
 form {
@@ -39,8 +44,8 @@ input[type=text], input[type=password] {
 /* Add padding to containers */
 .container {
     padding: 10px;
-    float: right;
-    width: 250px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 300px) {
@@ -53,6 +58,15 @@ input[type=text], input[type=password] {
     }
 }
 
+.login {
+  display: none;
+}
+
+.contactDetails {
+  width: 150px;
+  height: 20px;
+}
+
 #replacement {
   display: none;
 }
@@ -61,8 +75,8 @@ input[type=text], input[type=password] {
   display: none;
 }
 
-.login {
-  display: none;
+#datepicker {
+  width: 150px;
 }
 
 .outerform {

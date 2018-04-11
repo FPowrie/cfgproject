@@ -17,7 +17,7 @@
       <li><a href="FAQ.html">FAQ</a></li>
       <li><a href="#" class="login-button">Login</a></li>
     </ul>
-    
+
     <section class="container">
     <div class="login">
       <h1>Login</h1>
@@ -33,19 +33,27 @@
         <p class="submit"><input type="submit" name="commit" value="Login"></p>
       </form>
     </div>
+  </section>
+  <br/>
    </header>
 
-  <div class = "explanation"> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </div>
+  <div class="explanation"> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </div>
 
 <div class="outerform">
 <form id="form1" onsubmit="myFunction()">
 
 <h3> Travel Details </h3>
 
-<div>
-<form>
  <p>From:
-  <select name="From">
+  <select name="From" class="dropdown">
+        <option value ="stAndrews">St. Andrews</option>
+        <option value ="ediCity">Edinburgh City</option>
+        <option value ="ediAirport">Edinburgh Airport</option>
+        <option value ="glaCity">Glasgow City</option>
+        <option value ="glaAirport">Glasgow Airport</option>
+  </select>
+        &nbsp; &nbsp; &nbsp; &nbsp;     To:
+  <select name="To" class="dropdown">
         <option value ="stAndrews">St. Andrews</option>
         <option value ="ediCity">Edinburgh City</option>
         <option value ="ediAirport">Edinburgh Airport</option>
@@ -54,27 +62,14 @@
   </select>
   </p>
 
-  <p>To:
-  <select name="To">
-        <option value ="stAndrews">St. Andrews</option>
-        <option value ="ediCity">Edinburgh City</option>
-        <option value ="ediAirport">Edinburgh Airport</option>
-        <option value ="glaCity">Glasgow City</option>
-        <option value ="glaAirport">Glasgow Airport</option>
-  </select>
-  </p>
 
-  <div>
-     Date: <input type="text" id="datepicker">
-  </div>
-  
-  <br/>
-  <input id="time" placeholder="Insert departure time"><br>
+     Date: <input type="text" class="contactDetails" id="datepicker">
+  &nbsp; &nbsp; <input class="contactDetails" placeholder="Insert departure time"><br>
 
 <div id="ride">
-  <input type="radio" name="rad" id=needride checked="checked"> I am looking for a ride<br />
-  <input type="radio" name="rad" id="offerride" value= "ride">I am offering a ride<br>
-</div>
+  <input type="radio" name="rad" id=needride checked="checked"> I am looking for a ride</input>&nbsp;
+  <input type="radio" name="rad" id="offerride" value= "ride">I am offering a ride</input>
+</div><br/>
 
 
 <div id="liftq"
@@ -88,6 +83,7 @@
       <option value="5">5</option>
     </select><br>
   Are you willing to pick people up from their chosen location?
+  <br>
   <input type="radio" name="radi">Yes
   <input type="radio" name="radi">No
 </div>
@@ -96,18 +92,19 @@
 
 <h3> Contact Details </h3>
 <p>
-  Name:<input class="contactDetails"><br>
-  Email:<input class="contactDetails"><br>
+  Name: <input class="contactDetails"><br>
+  Email: <input class="contactDetails"><br>
   Phone: <input class="contactDetails"><br>
   Street: <input class="contactDetails"><br>
-  Town: <input class="contactDetails"><br>
+  Town:  <input class="contactDetails"><br>
   Postcode: <input class="contactDetails"><br>
 </p>
-    
+
 <textarea name="message" rows="8" cols="50">
   Extra information
   </textarea>
 
+<br>
 <input type="checkbox" checked>Keep me updated via e-mail<br>
 
 <input type="button" id="button1" name="Submit" value="Submit">
