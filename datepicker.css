@@ -1,9 +1,9 @@
 .ui-datepicker {
-  width: 216px;
+  width: 200px;
   height: auto;
   margin: 5px auto 0;
   font: 9pt Arial;
-  background-color: grey;
+  background-color: #00539b;
 }
 
 .ui-datepicker a {
@@ -17,7 +17,7 @@
 .ui-datepicker-title {
   text-align: center;
   font-weight: bold;
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .ui-datepicker-prev {
