@@ -10,15 +10,18 @@
 
 <body>
   <header>
-    <h1> SaintShare </h1>
+  <h1 class="title"> SaintShare</h1>
     <h3> Based in the coastal town of St. Andrews</h3>
+    <br><br><br>
+
     <ul>
       <li><a href="about.html">About</a></li>
       <li><a href="FAQ.html">FAQ</a></li>
       <li><a href="#" class="login-button">Login</a></li>
     </ul>
+  </header>
 
-    <section class="container">
+  <section class="container">
     <div class="login">
       <h1>Login</h1>
       <form method="post" action="index.html">
@@ -35,9 +38,9 @@
     </div>
   </section>
   <br/>
-   </header>
 
-  <div class="explanation"> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </div>
+<section class=container1>
+  <div class="explanation"><h4> Whether you're looking for a ride or offering a lift, just enter your details and we'll match you up! </h4></div>
 
 <div class="outerform">
 <form id="form1" onsubmit="myFunction()">
@@ -51,8 +54,9 @@
         <option value ="ediAirport">Edinburgh Airport</option>
         <option value ="glaCity">Glasgow City</option>
         <option value ="glaAirport">Glasgow Airport</option>
-  </select>
-        &nbsp; &nbsp; &nbsp; &nbsp;     To:
+
+  </select></p>
+  <p>To:
   <select name="To" class="dropdown">
         <option value ="stAndrews">St. Andrews</option>
         <option value ="ediCity">Edinburgh City</option>
@@ -64,12 +68,13 @@
 
 
      Date: <input type="text" class="contactDetails" id="datepicker">
-  &nbsp; &nbsp; <input class="contactDetails" placeholder="Insert departure time"><br>
+  &nbsp; &nbsp; <input class="contactDetails" placeholder="Insert departure time"><br><br>
 
 <div id="ride">
   <input type="radio" name="rad" id=needride checked="checked"> I am looking for a ride</input>&nbsp;
   <input type="radio" name="rad" id="offerride" value= "ride">I am offering a ride</input>
-</div><br/>
+</div><br>
+
 
 
 <div id="liftq"
@@ -84,7 +89,7 @@
     </select><br>
   Are you willing to pick people up from their chosen location?
   <br>
-  <input type="radio" name="radi">Yes
+  <input type="radio" name="radi" checked="checked">Yes
   <input type="radio" name="radi">No
 </div>
 </p>
@@ -102,19 +107,20 @@
 
 <textarea name="message" rows="8" cols="50">
   Extra information
-  </textarea>
+</textarea><br><br>
 
-<br>
-<input type="checkbox" checked>Keep me updated via e-mail<br>
+<input type="checkbox" checked>Keep me updated via e-mail</input><br><br>
 
-<input type="button" id="button1" name="Submit" value="Submit">
+<input type="button" id="button1" name="Submit" value="Submit"></input>
 
 </form>
 
 <div id="replacement">
 <p>Thank you for submitting your details!
   <br> We will be in touch via email within the next 48 hours with further details.</p>
+  <input type="button" id="button1" value="Go back" onClick="window.location.reload()">
 </div>
+</section>
 
 </body>
 </html>
