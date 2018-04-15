@@ -66,6 +66,15 @@ input[type=text], input[type=password] {
   height: 20px;
 }
 
+.login {
+  display: none;
+}
+
+.contactDetails {
+  width: 150px;
+  height: 20px;
+}
+
 #replacement {
   display: none;
 }
