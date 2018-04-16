@@ -1,3 +1,33 @@
+.container1 {
+  background: linear-gradient(to bottom, #ffffff 0%, lightgray 100%);
+}
+
+header {
+  background-image: url(http://www.visitstandrews.com/wp-content/uploads/2015/02/ce2599_f6b4fd0c24724bb3814e547d4cad44c0.jpg_srz_981_654_75_22_0.50_1.20_0.00_jpg_srz-940x381.jpg);
+  background-position: center;
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 40px;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  background-color: #00539b;
+  padding: 10px;
+}
+
+li {
+ display: inline;
+ padding: 20px;
+}
+
 .explanation {
   text-align: center;
   font-family: verdana;
@@ -55,15 +85,6 @@ input[type=text], input[type=password] {
         display: block;
         float: none;
     }
-}
-
-.login {
-  display: none;
-}
-
-.contactDetails {
-  width: 150px;
-  height: 20px;
 }
 
 .login {
