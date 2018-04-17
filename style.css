@@ -1,5 +1,5 @@
-.container1 {
-  background: linear-gradient(to bottom, #ffffff 0%, #00539b 100%);
+body {
+  background: linear-gradient(to bottom, #ffffff 0%, #00539b 200%);
 }
 
 header {
