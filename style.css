@@ -117,9 +117,6 @@ input[type=text], input[type=password] {
   cursor: pointer;
 }
 
-#button1:hover {
-    opacity: 0.8;
-}
 
 .fa {
     padding: 15px;
