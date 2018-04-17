@@ -1,5 +1,5 @@
 .container1 {
-  background: linear-gradient(to bottom, #ffffff 0%, lightgray 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #00539b 100%);
 }
 
 header {
@@ -15,7 +15,8 @@ header {
 }
 
 a {
-  color: white;
+  color: black;
+  font-family: verdana;
 }
 
 ul {
